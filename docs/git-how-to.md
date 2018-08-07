@@ -1,0 +1,25 @@
+# How to do things with git and github
+
+- git is a free and open source distributed version control system. [read more](https://git-scm.com/)
+- To create a local git repo form scratch, `cd` to the directory you want to initialize as a git repo and run command `git init` on it.
+- To see the change history run `git log`
+- To see the status of the repo run `git status`. This will show you what is going on locally in terms of new and modified files as well as tracked and untracked files.
+- You can add new files or edit existing files locally with the editor of your choice
+- When ready to commit your changes, you need to first stage the changes.
+- In order to stage a single file you can run `git add <file name>`
+- In order to stage all your changes, run `git add .`
+- The next step after you stage your changes is to make a commit. Run `git commit -m "put your commit comment here..."`
+- Now if you run `git log`, you should be able to see the new commit on top of the history log
+- You can follow the steps above as many times as you want to make changes and create commits but all of these changes are in your local git repo
+- In order to contribute to different work streams, git allows you to create feature branches. A git branch is like a pointer to a git commit. So when you crate a new branch, it creates a pointer to the current commit.
+- In order to see the list of the branches run `git branch`. This will show a list of branches in your local repo.
+- Running `git branch my-feature` will create a new branch called `my-feature` that points to the same commit that the current branch points to.
+- In order to switch (checkout) to the new `my-feature` branch, run `git checkout my-feature`
+- There is a short cut for the above two steps. running `git checkout -b my-feature` will create a new branch `my-feature` and swith to it in one step.
+- Git also allows you to push your changes to a remote git repository such as github, gitlab, bitbucket or any other compaitble git host
+- In order to do that you need to define `remotes` to your local repo. 
+- To see what remotes your local repo is connected to run `git remote -v`
+- If you cloned your local repo from a fork, the clone command by default creates a remote called `origin` and points it to the fork.
+- Runnig the command `git remote add origin https://github.com/moe-1/moe` will add a remote called `origin` (this is a conventional name git users tent to add for their default remote) and point it to `https://github.com/moe-1/moe`
+- Now that you have a remote setup, you push to that remote runnig a command like `git push --force origin my-feature`. 
+- This command will push your local commits to a branch with the same name in your remote repo. 
