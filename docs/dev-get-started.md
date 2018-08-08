@@ -28,4 +28,7 @@
     - `git push origin update-docs`
 - Make a pull request to the upstream `moe-1/moe`
     - Navigate to your github fork
-    - 
+    - Click on the button `New Pull Request`
+    - ![New Pull Request](/docs/make-pr-1.png)
+    - Make sure the base and fork branches are selected correctly, fill out the info for the pull request and click on the `Create Pull Request`
+    - ![Create Pull Request](/docs/make-pr-2.png)
