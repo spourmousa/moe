@@ -1,6 +1,6 @@
 # How to do things with git and github
 
-- git is a free and open source distributed version control system. [read more](https://git-scm.com/)
+- git is a free and open source distributed version control system. [read more](https://git-scm.com/).
 - To create a local git repo form scratch, `cd` to the directory you want to initialize as a git repo and run command `git init` on it.
 - To see the change history run `git log`
 - To see the status of the repo run `git status`. This will show you what is going on locally in terms of new and modified files as well as tracked and untracked files.

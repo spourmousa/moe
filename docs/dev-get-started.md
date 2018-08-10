@@ -1,5 +1,5 @@
 
-# Get Started for local development
+# Get Started for local development ([here](/docs/git-how-to.md) is a git cheatsheet)
 
 - Fork the repo
     
@@ -32,3 +32,6 @@
     - ![New Pull Request](/docs/make-pr-1.png)
     - Make sure the base and fork branches are selected correctly, fill out the info for the pull request and click on the `Create Pull Request`
     - ![Create Pull Request](/docs/make-pr-2.png)
+- How to run the project locally:
+    - `npm install` to install all the depencenies
+    - `npm start` to start the local server. This should also automatically open the browser. If it didn't, just navigate to http://localhost:8080
